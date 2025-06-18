@@ -1,19 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>Travelia — הדרך הקלה והחכמה לטיסות ולחופשות</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travelia — הדרך הקלה והחכמה לטיסות ולחופשות</title>
+  <meta name="description" content="אתר חכם לחיפוש טיסות ומלונות עם מנוע חיפוש אמיתי, דילים יומיים ותמיכה מלאה בעברית." />
+  <meta name="keywords" content="טיסות, מלונות, דילים, חופשות, כשרות, פארק מים, Travelia" />
+  <meta name="author" content="ShayFly Team" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <img src="logo.png" alt="Travelia Logo" width="120">
-        <h1>Travelia — הדרך הקלה והחכמה לטיסות ולחופשות</h1>
-    </header>
-    <main>
-        <h2>חיפוש טיסות</h2>
-        <iframe src="https://www.travelpayouts.com/widgets/0c8ad4b03dafea0bbd3e9df241a2c105" frameborder="0" width="100%" height="400"></iframe>
-    </main>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="לוגו Travelia" class="w-24 h-auto" />
+      <div>
+        <h1 class="text-2xl font-bold">Travelia</h1>
+        <p class="text-sm text-gray-600">הדרך הקלה והחכמה לטיסות ולחופשות</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="#flights" class="hover:text-blue-600">טיסות</a></li>
+        <li><a href="#hotels" class="hover:text-blue-600">מלונות</a></li>
+        <li><a href="#deals" class="hover:text-blue-600">דילים</a></li>
+        <li><a href="#blog" class="hover:text-blue-600">בלוג</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">צור קשר</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <section id="flights" aria-label="חיפוש טיסות" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">חיפוש טיסות</h2>
+      <iframe 
+        src="https://www.travelpayouts.com/widgets/0c8ad4b03dafea0bbd3e9df241a2c105" 
+        frameborder="0" 
+        width="100%" 
+        height="500" 
+        title="חיפוש טיסות Travelpayouts" 
+        loading="lazy"
+        class="rounded-md"
+      ></iframe>
+    </section>
+
+    <section id="hotels" aria-label="חיפוש מלונות" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">חיפוש מלונות</h2>
+      <!-- דוגמה ל-iframe חיפוש מלונות Travelpayouts -->
+      <iframe 
+        src="https://www.travelpayouts.com/widgets/hotels?marker=0c8ad4b03dafea0bbd3e9df241a2c105" 
+        frameborder="0" 
+        width="100%" 
+        height="500" 
+        title="חיפוש מלונות Travelpayouts" 
+        loading="lazy"
+        class="rounded-md"
+      ></iframe>
+    </section>
+
+    <section id="deals" aria-label="דילים חמים" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">דילים חמים</h2>
+      <p class="text-gray-700 mb-2">גלה דילים יומיים מותאמים אישית עבורך, עם סינון לפי כשרות ופארק מים.</p>
+      <!-- ניתן להוסיף כאן דינמיקה או רשימת דילים -->
+      <ul class="list-disc list-inside text-blue-700">
+        <li>דיל מיוחד לקפריסין - טיסות + מלון רק ב-1,590 ש"ח</li>
+        <li>דיל כשר באיטליה כולל פארק מים למשפחות</li>
+        <li>מבצע מיוחד ליוון - טיסה + מלון חופשי</li>
+      </ul>
+    </section>
+
+    <section id="blog" aria-label="בלוג טיולים" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">בלוג טיולים</h2>
+      <article class="mb-4">
+        <h3 class="text-lg font-bold text-blue-700">איך למצוא טיסות זולות בקיץ?</h3>
+        <p>טיפים לשמירת מחירים ולזמני רכישה חכמים...</p>
+      </article>
+      <article>
+        <h3 class="text-lg font-bold text-blue-700">המלצות למלונות כשרים עם פארק מים</h3>
+        <p>רשימת המלונות המובילים למשפחות דתיות...</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-label="טופס יצירת קשר" class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">צור קשר</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="space-y-4 max-w-md">
+        <label class="block">
+          <span class="text-gray-700">שם מלא</span>
+          <input type="text" name="name" required class="mt-1 block w-full rounded border border-gray-300 p-2 focus:border-blue-500" />
+        </label>
+        <label class="block">
+          <span class="text-gray-700">אימייל</span>
+          <input type="email" name="_replyto" required class="mt-1 block w-full rounded border border-gray-300 p-2 focus:border-blue-500" />
+        </label>
+        <label class="block">
+          <span class="text-gray-700">הודעה</span>
+          <textarea name="message" rows="4" required class="mt-1 block w-full rounded border border-gray-300 p-2 focus:border-blue-500"></textarea>
+        </label>
+        <button type="submit" class="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-700 transition">שלח</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="bg-white shadow-inner p-4 text-center text-gray-600 text-sm">
+    &copy; 2025 Travelia - כל הזכויות שמורות
+  </footer>
+
 </body>
 </html>
