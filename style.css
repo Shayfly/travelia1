@@ -1,84 +1,48 @@
-/* Travelia Super Pro — עיצוב כללי */
 body {
-    direction: rtl;
-    font-family: 'Varela Round', 'Assistant', sans-serif;
-    background-color: #f8fafc;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  direction: rtl;
+  font-family: 'Varela Round', 'Assistant', sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
-
-/* כותרת עליונה */
 header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
 }
-
 header img {
-    height: 60px;
+  width: 120px;
 }
-
-header h1 {
-    font-size: 20px;
-    color: #1e3a8a;
+h1 {
+  color: #2563eb;
 }
-
-/* עיצוב ראשי */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px;
+  padding: 20px;
 }
-
 h2 {
-    color: #2563eb;
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 5px;
+  border-bottom: 2px solid #2563eb;
+  color: #2563eb;
 }
-
-/* Iframe עיצוב */
-iframe {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* כפתורים וכלליים */
-button {
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #1d4ed8;
-}
-
-/* טופס יצירת קשר */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
-
 input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  margin: 5px 0;
+  padding: 8px;
 }
-
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
 footer {
-    background-color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    color: #777;
-    font-size: 14px;
-    margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  color: #777;
 }
