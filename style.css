@@ -1,0 +1,12 @@
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+}
+header {
+    background: #4FC3F7;
+    padding: 10px;
+    border-radius: 10px;
+}
