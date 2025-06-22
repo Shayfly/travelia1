@@ -22,6 +22,7 @@ Travelia is a professional platform for searching flights, hotels, and hot deals
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Shayfly/travelia1.git
+   ```
 Open the project:
 פשוט לפתוח את הקובץ index.html בדפדפן.
 Just open index.html in your web browser.
@@ -52,11 +53,4 @@ See the LICENSE file for details.
 
 צרו קשר (Contact)
 לשאלות והצעות, ניתן לפנות אליי דרך GitHub.
-Code
-
-**Instructions:**  
-1. Copy all the text above.
-2. Open your repository’s README.md file on GitHub or in your code editor.
-3. Paste the copied content, replacing the old content.
-4. Save and commit the changes.
 
